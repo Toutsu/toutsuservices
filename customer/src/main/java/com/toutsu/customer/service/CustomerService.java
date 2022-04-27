@@ -17,7 +17,7 @@ public record CustomerService(CustomerRepository customerRepository,
                 .email(request.email()).build();
         customerRepository.saveAndFlush(customer);
         FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                "http://localhost:8081/api/v1/fraud/{customerId}",
+                "http://FRAUD/api/v1/fraud/{customerId}",
                 FraudCheckResponse.class,
                 customer.getId()
         );
