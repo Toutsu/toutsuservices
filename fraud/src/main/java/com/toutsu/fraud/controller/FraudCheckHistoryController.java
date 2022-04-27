@@ -1,6 +1,6 @@
 package com.toutsu.fraud.controller;
 
-import com.toutsu.fraud.FraudCheckResponse;
+import com.toutsu.clients.fraud.FraudCheckResponse;
 import com.toutsu.fraud.service.FraudCheckHistoryService;
 import org.springframework.web.bind.annotation.*;
 
